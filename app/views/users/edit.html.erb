@@ -19,7 +19,7 @@ Password:<br><%=password_field_tag(:password_digest) %><br>
 <%=submit_tag("Submit") %>
 -->
 
-<%=form_for @user, url: {action: 'create'}, html: {class: 'niceForm'} do |f| %>
+<%=form_for @user, url: user_path, html: {class: 'niceForm'} do |f| %>
   Username:<br> <%= f.text_field :ussername, placeholder: "Username" %><br>
   Email:<br> <%= f.text_field :email %> <br>
   Passwordd: <br> <%= f.text_field :password_digest %> <br>

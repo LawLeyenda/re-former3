@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :username, presence: true, length: { maximum: 50 }
+  validates :ussername, presence: true, length: { maximum: 50 }
   validates :email, presence: true, length: { maximum: 50 }
-  validates :password, presence: true, length: { maximum: 50 }
+  validates :password_digest, presence: true, length: { maximum: 50 }
 end
